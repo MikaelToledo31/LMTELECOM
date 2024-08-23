@@ -3,20 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/img/logo.png">
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
-
-    <script src="script.js"></script>
-
-    <link rel="icon" type="image/png" href="assets/img/logo.png">
-    
+    <script src="script.js" defer></script>
     <title>Lm Telecom</title>
 </head>
 <body>
-    <header>
-        <div><a href="index.html"><img class="logo"src="./assets/img/logo.png" alt="logo"></a></div>
+    <header id="inicio">
+        <div><a href="#inicio"><img class="logo"src="./assets/img/logo.png" alt="logo"></a></div>
         <div class="navigation">
-            <a href="index.html">Início</a>
+            <a href="#inicio">Início</a>
             <a href="#planos">Planos</a>
             <a href="https://lmtelecom.sgp.net.br/accounts/central/login" target="_blank" id="central">Central do Assinante</a>
             <a href="#contato">Contato</a>
@@ -44,38 +41,38 @@
                 </select>
             </form>
             <section class="carrosel">
-                <div class="card">
+                <div class="card" data-id="0">
                     <h1>30 MEGA</h1>
-                    <h2>R$ 49,90</h2>
+                    <h2 >R$ 49,90</h2>
 
                     
                     <button><a href="#">Assinar</a></button>
                 </div>
-                <div class="card">
+                <div class="card" data-id="1">
                     <h1>50 MEGA</h1>
-                    <h2>R$ 64,90</h2>
+                    <h2 >R$ 64,90</h2>
 
                     <button><a href="#">Assinar</a></button>
                 </div>
-                <div class="card">
+                <div class="card" data-id="2">
                     <h1>100 MEGA</h1>
-                    <h2>R$ 79,90</h2>
+                    <h2 >R$ 79,90</h2>
 
                     <button><a href="#">Assinar</a></button>
                 </div>
-                <div class="card">
+                <div class="card" data-id="3">
                     <h1>200 MEGA</h1>
-                    <h2>R$ 89,90</h2>
+                    <h2 >R$ 89,90</h2>
 
                     <button><a href="#">Assinar</a></button>
                 </div>
-                <div class="card">
+                <div class="card" data-id="4">
                     <h1>300 MEGA</h1>
-                    <h2>R$ 99,90</h2>
+                    <h2 >R$ 99,90</h2>
 
                     <button><a href="#">Assinar</a></button>
                 </div>
-                <div class="card">
+                <div class="card" data-id="5">
                     <h1>400 MEGA</h1>
                     <h2>R$ 109,90</h2>
 
@@ -87,9 +84,31 @@
         <div class="frame3">
             <h1>Perguntas Frequentes</h1>
 
+            <div class="perguntas">
+                <details>
+                    <summary class="pergunta">Como pagar meu boleto?</summary>
+                    <p class="resposta">Atualmente disponibilizamos tres maneiras de pagar seu boleto, voce pode solicitar um boleto para a loja, pode pagar pelo aplicativo (<a class="linksPergunta" href="https://play.google.com/store/apps/details?id=br.net.tsmx.meuappprovedor">Meu App Provedor</a>) ou pela <a class="linksPergunta" href="https://lmtelecom.sgp.net.br/accounts/central/login" target="_blank" id="central">Central do Assinante</a> disponivel no site.</p>
+                </details>
+            </div>
+
         </div>
 
-        <footer>
+        <footer id="contato">
+            
+            <div>
+                <a href="#inicio"><img class="logoFooter" src="./assets/img/logo.png" alt="Logo"></a>
+            </div>
+            <div class="redes-sociais">
+                <a href=""><img src="./assets/img/instagram.svg" alt="Instagram"></a>
+                <a href=""><img src="./assets/img/whatsapp.svg" alt="whatsapp"></a>
+            </div>
+
+            <div class="aplicativo">
+                <h2>Aplicativo</h2>
+                <a href="https://play.google.com/store/apps/details?id=br.net.tsmx.meuappprovedor&referrer=utm_source%3Dseu_site%26utm_medium%3Dlink" target="_blank">Baixe para Android</a>
+                <a href="">Baixe para IOS</a>
+            </div>
+            
             
         </footer>
    
