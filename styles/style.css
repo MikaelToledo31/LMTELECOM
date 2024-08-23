@@ -15,7 +15,7 @@ header{
     justify-content: space-between;
 }
 
-header .logo{
+.logo{
     width: 100px;
 }
 
@@ -48,7 +48,7 @@ header .navigation a:hover{
 
 .frame1 h1{
     font-family: 'Oxanium', 'Inter', sans-serif ;
-    font-size: 54px;
+    font-size: 3.8vw;
     color: #fff;
     padding: 5% 10% ;
     margin-bottom: 2%;
@@ -60,7 +60,7 @@ header .navigation a:hover{
 .frame1 h4{
     padding: 20% 10% ;
     position: absolute;
-    font-size: 24px;
+    font-size: 1.5vw;
     color: #fff;
     font-weight: normal;
     z-index: 1;
@@ -73,11 +73,12 @@ header .navigation a:hover{
 }
 
 .frame2 h1{
+    padding-top: 5%;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'Oxanium', 'Inter', sans-serif ;
-    font-size: 54px;
+    font-size: 4vw;
     color: #fff;
     font-weight: bold;
 }
@@ -177,16 +178,52 @@ header .navigation a:hover{
     text-align: center;
 }
 
+.pergunta{
+    background-color: #C9E4CA;
+    padding: 1.5%;
+    border-bottom: 1px solid #282828;
+    font-weight: 600;
+}
+
+.resposta{
+    background-color: #B2E6CE;
+    padding: 1.5%;
+}
+
+.linksPergunta{
+    color: #282828;
+    font-weight: 600;
+}
+
 footer{
     height: 20vh;
+    display: flex;
+    padding: 1.5vh 10% 0 10%;
+    justify-content: space-between;
+} 
+
+footer .logoFooter{
+    width: 100px;
+}
+
+.redes-sociais{
+    display: flex;
+    gap: 2vw;
+    padding-top: 1.5vh;
+}
+
+.aplicativo{
+    display: flex;
+    gap: 0.5vw;
+    padding-top: 1.5px;
+    flex-direction: column;
+}
+
+.aplicativo h2{
+    color: #fff;
+}
+
+.aplicativo a{
+    color: #d5cbcb;
 }
    
-   
-  
-
-
-
-
-
-
-
