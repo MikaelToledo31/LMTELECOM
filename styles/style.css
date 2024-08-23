@@ -197,25 +197,31 @@ header .navigation a:hover{
 
 footer{
     height: 20vh;
+    
+} 
+
+.pt1{
     display: flex;
     padding: 1.5vh 10% 0 10%;
     justify-content: space-between;
-} 
+    max-height: 13vh;
+    min-height: 13vh;
+    align-items: center;
+}
 
 footer .logoFooter{
-    width: 100px;
+    width: 6vw;
 }
 
 .redes-sociais{
     display: flex;
     gap: 2vw;
-    padding-top: 1.5vh;
+    
 }
 
 .aplicativo{
     display: flex;
     gap: 0.5vw;
-    padding-top: 1.5px;
     flex-direction: column;
 }
 
@@ -224,6 +230,12 @@ footer .logoFooter{
 }
 
 .aplicativo a{
-    color: #d5cbcb;
+    color: #fff;
+    opacity: 0.8;
+}
+
+.aplicativo a:hover{
+    color: #87CEEB;
+    opacity: 1;
 }
    
