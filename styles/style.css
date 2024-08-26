@@ -1,13 +1,13 @@
-:root{
+:root {
     --primary-color: #010423
 }
 
-body{
+body {
     background-color: var(--primary-color);
 }
 
-header{
-    padding: 0 10% ;
+header {
+    padding: 0 10%;
     position: relative;
     width: 100%;
     display: flex;
@@ -15,29 +15,29 @@ header{
     justify-content: space-between;
 }
 
-.logo{
+.logo {
     width: 100px;
 }
 
-header .navigation a:not(:nth-child(3)){
+header .navigation a:not(:nth-child(3)) {
     color: #fff;
     font-size: 18px;
     margin-left: 30px;
     text-decoration: none;
 }
 
-header .navigation a:nth-child(3){
+header .navigation a:nth-child(3) {
     color: #87CEEB;
     font-size: 18px;
     margin-left: 30px;
     text-decoration: none;
 }
 
-header .navigation a:hover{
+header .navigation a:hover {
     text-decoration: underline;
 }
 
- .frame1 img{
+.frame1 img {
     float: right;
     object-fit: cover;
     width: auto;
@@ -46,19 +46,19 @@ header .navigation a:hover{
     position: relative;
 }
 
-.frame1 h1{
-    font-family: 'Oxanium', 'Inter', sans-serif ;
+.frame1 h1 {
+    font-family: 'Oxanium', 'Inter', sans-serif;
     font-size: 3.8vw;
     color: #fff;
-    padding: 5% 10% ;
+    padding: 5% 10%;
     margin-bottom: 2%;
     font-weight: bold;
     z-index: 1;
     position: absolute;
 }
 
-.frame1 h4{
-    padding: 20% 10% ;
+.frame1 h4 {
+    padding: 20% 10%;
     position: absolute;
     font-size: 1.5vw;
     color: #fff;
@@ -66,29 +66,29 @@ header .navigation a:hover{
     z-index: 1;
 }
 
-.frame2{
-    padding: 0% 10% ;
+.frame2 {
+    padding: 0% 10%;
     margin-top: 100vh;
     height: 100vh;
 }
 
-.frame2 h1{
+.frame2 h1 {
     padding-top: 5%;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Oxanium', 'Inter', sans-serif ;
+    font-family: 'Oxanium', 'Inter', sans-serif;
     font-size: 4vw;
     color: #fff;
     font-weight: bold;
 }
 
-.frame2 form{
+.frame2 form {
     margin-top: 5%;
     margin-bottom: 5%;
 }
 
-.frame2 form select{
+.frame2 form select {
     height: 54px;
     border-radius: 5px;
     background: white;
@@ -102,36 +102,38 @@ header .navigation a:hover{
 
 .frame2 form select:hover {
     transform: scale(1.1);
-    
+
 }
 
-.frame2 .carrosel{
+.frame2 .carrosel {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 20px
+    gap: 20px;
 }
 
 .frame2 .card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 190px;
-    height: 254px;
+    min-width: 190px;
+    min-height: 254px;
     background-color: #F8FBFE;
     border-radius: 8px;
     opacity: 0.8;
+
+    /*flex-shrink: 0;*/
 }
 
-.frame2 .card:hover{
+.frame2 .card:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     opacity: 1;
     transform: scale(1.1);
     transition: 0.3s;
 }
 
-.frame2 .card h1{
+.frame2 .card h1 {
     font-weight: bold;
     text-align: center;
     padding: 0vh 1vh;
@@ -141,7 +143,7 @@ header .navigation a:hover{
     margin: 1vh 0;
 }
 
-.frame2 .card h2{
+.frame2 .card h2 {
     text-align: center;
     font-size: 1.8vw;
 }
@@ -152,24 +154,24 @@ header .navigation a:hover{
     border: unset;
     border-radius: 8px;
     color: #000000;
-    background: #e8e8e8; 
+    background: #e8e8e8;
     transition: all 250ms;
     overflow: hidden;
-   }
-   
+}
+
 .frame2 .card button:hover {
     background: #87CEEB;
     color: #000;
-   }
+}
 
-.frame3{
+.frame3 {
     background-color: #87CEEB;
-    padding: 0% 10% ;
+    padding: 0% 10%;
     height: 80vh;
 }
 
-.frame3 h1{
-    font-family: 'Oxanium', 'Inter', sans-serif ;
+.frame3 h1 {
+    font-family: 'Oxanium', 'Inter', sans-serif;
     font-size: 4vw;
     color: #fff;
     font-weight: bold;
@@ -178,29 +180,29 @@ header .navigation a:hover{
     text-align: center;
 }
 
-.pergunta{
+.pergunta {
     background-color: #fff;
     padding: 1.5%;
     border-bottom: 1px solid #282828;
     font-weight: 600;
 }
 
-.resposta{
+.resposta {
     background-color: #E5E5E5;
     padding: 1.5%;
 }
 
-.linksPergunta{
+.linksPergunta {
     color: #282828;
     font-weight: 600;
 }
 
-footer{
+footer {
     height: 20vh;
-    
-} 
 
-.pt1{
+}
+
+.pt1 {
     display: flex;
     flex-wrap: wrap;
     padding: 1.5vh 10% 0 10%;
@@ -213,40 +215,40 @@ footer{
 .logo-container,
 .social-container,
 .app-container {
-  flex-basis: 12%; 
-  background-color: var(--primary-color);
+    flex-basis: 12%;
+    background-color: var(--primary-color);
 }
 
-footer .logoFooter{
+footer .logoFooter {
     width: 6vw;
 }
 
-.social-container{
+.social-container {
     display: flex;
     justify-content: space-around;
 }
 
-.app-container{
+.app-container {
     display: flex;
     gap: 0.5vw;
     flex-direction: column;
 }
 
-.app-container h2{
+.app-container h2 {
     color: #fff;
 }
 
-.app-container a{
+.app-container a {
     color: #fff;
     opacity: 0.8;
 }
 
-.app-container a:hover{
+.app-container a:hover {
     color: #87CEEB;
     opacity: 1;
 }
 
-footer .pt2{
+footer .pt2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -263,14 +265,13 @@ footer .pt2 p {
     font-size: 0.8em;
     color: #666;
     text-align: center;
-  }
-  
+}
+
 footer .pt2 a {
     text-decoration: none;
     color: #337ab7;
 }
-  
+
 footer .pt2 a:hover {
     color: #23527c;
 }
-   
