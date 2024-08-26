@@ -179,14 +179,14 @@ header .navigation a:hover{
 }
 
 .pergunta{
-    background-color: #C9E4CA;
+    background-color: #fff;
     padding: 1.5%;
     border-bottom: 1px solid #282828;
     font-weight: 600;
 }
 
 .resposta{
-    background-color: #B2E6CE;
+    background-color: #E5E5E5;
     padding: 1.5%;
 }
 
@@ -202,6 +202,7 @@ footer{
 
 .pt1{
     display: flex;
+    flex-wrap: wrap;
     padding: 1.5vh 10% 0 10%;
     justify-content: space-between;
     max-height: 13vh;
@@ -209,33 +210,67 @@ footer{
     align-items: center;
 }
 
+.logo-container,
+.social-container,
+.app-container {
+  flex-basis: 12%; 
+  background-color: var(--primary-color);
+}
+
 footer .logoFooter{
     width: 6vw;
 }
 
-.redes-sociais{
+.social-container{
     display: flex;
-    gap: 2vw;
-    
+    justify-content: space-around;
 }
 
-.aplicativo{
+.app-container{
     display: flex;
     gap: 0.5vw;
     flex-direction: column;
 }
 
-.aplicativo h2{
+.app-container h2{
     color: #fff;
 }
 
-.aplicativo a{
+.app-container a{
     color: #fff;
     opacity: 0.8;
 }
 
-.aplicativo a:hover{
+.app-container a:hover{
     color: #87CEEB;
     opacity: 1;
+}
+
+footer .pt2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 1.5vh 0;
+    font-weight: 600;
+    font-size: 0.8em;
+    line-height: 1.5em;
+    text-align: center;
+    gap: 1vh
+}
+
+footer .pt2 p {
+    font-size: 0.8em;
+    color: #666;
+    text-align: center;
+  }
+  
+footer .pt2 a {
+    text-decoration: none;
+    color: #337ab7;
+}
+  
+footer .pt2 a:hover {
+    color: #23527c;
 }
    
